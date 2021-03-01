@@ -1,0 +1,15 @@
+[submodule "webrepl"]
+	path = webrepl
+	url = https://github.com/micropython/webrepl.git
+[submodule "esp-idf"]
+	path = esp-idf
+	url = https://github.com/espressif/esp-idf.git
+[submodule "micropython"]
+	path = micropython
+	url = git@github.com:svenschwermer/micropython.git
+[submodule "micropython-font-to-py"]
+	path = micropython-font-to-py
+	url = git@github.com:svenschwermer/micropython-font-to-py.git
+[submodule "micropython-waveshare-epaper"]
+	path = micropython-waveshare-epaper
+	url = https://github.com/mcauser/micropython-waveshare-epaper
