@@ -1,2 +1,4 @@
 venv/
 *.FCStd1
+*.stl
+*.step
