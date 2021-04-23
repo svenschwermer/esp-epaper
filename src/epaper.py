@@ -5,6 +5,7 @@ import urequests
 import json
 import font
 from framebuf import FrameBuffer, MONO_VMSB
+from machine import WDT
 
 key_id = 'bm672hb24te000b24thg'
 with open('key_secret', 'rt') as f:
@@ -34,6 +35,7 @@ auth_header = encode_basic_auth(key_id, key_secret)
 large_y = (e.e.height - 8 - font.height) // 2
 
 last = [None, None, None]
+wdt = WDT(timeout=10000)
 while True:
     resp = urequests.get(state_url, headers=auth_header)
     resp_json = json.loads(resp.text)
@@ -53,3 +55,4 @@ while True:
         last = new
 
     time.sleep(3)
+    wdt.feed()
