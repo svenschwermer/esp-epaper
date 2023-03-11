@@ -7,11 +7,11 @@ import font
 from framebuf import FrameBuffer, MONO_VMSB
 from machine import WDT
 
-key_id = 'bm672hb24te000b24thg'
+key_id = 'cekbla6rjcp000agrcu0'
 with open('key_secret', 'rt') as f:
     key_secret = f.read()
-project_id = 'bg5tq3e4go0ecm2di8j0'
-sensor_id = 'bj9s6jqe27fg00a7eg80'
+project_id = 'ccqmtai1fee7t2o52ggg'
+sensor_id = 'bjihthopismg008hrou0'
 
 def encode_basic_auth(username, password):
     import ubinascii
